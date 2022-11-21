@@ -1,0 +1,65 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SPAMWARE", "DarkTheme")
+
+--- JailBreak ---
+local JailBreak = Window:NewTab("JailBreak")
+local JailBreakSection = JailBreak:NewSection("JailBreak")
+
+JailBreakSection:NewButton("Vynixius (Key needed)", "JailBreak Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua"))()
+end)
+
+JailBreakSection:NewButton("JailMonkey", "JailBreak Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+end)
+
+JailBreakSection:NewButton("JailBreak Autofarm", "JailBreak Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))()
+end)
+
+
+-- Arsenal --
+local Arsenal = Window:NewTab("Arsenal")
+local ArsenalSection = Arsenal:NewSection("Arsenal")
+
+ArsenalSection:NewButton("OwlHub", "Arsenal Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+ArsenalSection:NewButton("BoltsHub", "Arsenal Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
+end)
+
+ArsenalSection:NewButton("V.G-Hub", "Arsenal Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+
+-- Fun Stuff --
+local FunStuff = Window:NewTab("Fun Stuff")
+local FunStuffSection = FunStuff:NewSection("Fun Stuff")
+
+FunStuffSection:NewLabel("More Coming Soon!")
+
+FunStuffSection:NewToggle("WalkSpeed", "Speedy", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+FunStuffSection:NewToggle("JumpPower", "Fly like a bird", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+
+-- CREDITS --
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+
+CreditsSection:NewLabel("Created by 1supra aka C14ut")
